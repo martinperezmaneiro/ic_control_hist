@@ -20,6 +20,10 @@ from city_hist.chits_hist   import chits_file_writer
 from city_hist.tracks_hist import tracks_file_writer
 from city_hist.deco_hist   import deco_file_writer
 
+'''
+This script takes 2 histogram files (made with create_control_hist.py), reads them, selects the common xlimits in the
+explored variables, and redoes the histograms for each group of files.
+'''
 #NEEDED VARIABLES
 data_path = '/Users/mperez/NEXT/ic_dev/files/' #path to old and refactor prod
 

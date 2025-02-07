@@ -6,7 +6,6 @@ import tables as tb
 import pandas as pd
 
 import invisible_cities.io.dst_io as dio
-
 #path of the current file, added to pythonpath to use the functions
 dir_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(dir_path)
@@ -20,6 +19,9 @@ from city_hist.chits_hist   import chits_file_writer
 from city_hist.tracks_hist import tracks_file_writer
 from city_hist.deco_hist   import deco_file_writer
 
+'''
+This script creates the control histograms for a group of files, for the wanted cities.
+'''
 
 #NEEDED VARIABLES
 data_path = '/Users/mperez/NEXT/ic_dev/files/refactor_prod/' #path to cities folders containing data
