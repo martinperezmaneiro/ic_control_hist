@@ -106,8 +106,8 @@ if __name__ == "__main__":
         # Read histograms to select common xlims
         xlims = common_xlims(A_hist, B_hist, order_dict['sophronia'])
         # Recalculate with the new lims
-        hist_dict[change_name](A_files, out_path, city = change_name, xrange = xlims)
-        hist_dict['sophronia'](B_files, out_path, city = 'sophronia', xrange = xlims)
+        hist_dict[change_name](A_files, out_path, city = change_name, tag = A_tag, xrange = xlims)
+        hist_dict['sophronia'](B_files, out_path, city = 'sophronia', tag = B_tag, xrange = xlims)
 
     #ESMERALDA
     if np.isin(cities, 'esmeralda').any():
